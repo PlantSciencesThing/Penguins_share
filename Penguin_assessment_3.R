@@ -17,8 +17,6 @@ head(Adelie_dataset)
 
 #Create linear model and assess output
 Adelie_model <- lm(body_mass_g ~ culmen_depth_mm, Adelie_dataset)
-summary(Adelie_model)
-#Statistically significant F value observed
 
 #Plot the linear regression
 ggplot(Adelie_dataset, aes(x = culmen_depth_mm, y = body_mass_g)) +
